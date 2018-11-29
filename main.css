@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400');
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('fonts/ProximaNova-Semibold.woff2') format('woff2'),
+    url('fonts/ProximaNova-Semibold.woff') format('woff');
+
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('fonts/ProximaNova-Medium.woff2') format('woff2'),
+    url('fonts/ProximaNova-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    /*font-size: calc( (100vw - Vmin)/(Vmax - Vmin) * (Fmax - Fmin) + Fmin);*/
+    /*font-size: calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 16px);*/
+    font-size: calc( (100vw - 30rem)/(80 - 30) * (1.5 - 1) + 1rem);
+}
+
+main {
+    background: #d33a2c;
+    padding: 50px 0;
+    transition: .4s linear;
+    color: white;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+label,
+input {
+    display: block;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
+
+input {
+    -webkit-appearance: none;
+}
+
+input:checked + main {
+    background: white;
+    color: black;
+}
+
+header > *,
+li {
+    display: inline-block;
+}
+
+.greeting {
+    /*text-align: center;*/
+}
+
+.bg-greeting {
+    display: block;
+    margin: 0 auto;
+    background: url("images/landing.png") center;
+    width: auto;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.main-description h2,
+.main-description p {
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.main-description h2 {
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    font-size: calc( (100vw - 30rem)/(80 - 30) * (5 - 1) + 1rem);
+}
+
+.info-block {
+    display: inline-block;
+    width: calc((100% / 2) - 10px);
+    box-sizing: border-box;
+    padding: 0 50px;
+    min-height: 500px;
+    overflow: scroll;
+    margin-bottom: 20px;
+}
+
+.info-block h2 {
+    font-family: "Proxima Nova", sans-serif;
+}
+
+.info-block:last-of-type > p {
+    font-style: italic;
+
+}
+
+.info-content, .info-img{
+    width: 100%;
+    height: auto;
+}
+
+.nav {
+    padding-left: 0;
+}
+
+.logo {
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
